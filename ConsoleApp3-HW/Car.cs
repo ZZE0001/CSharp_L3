@@ -12,18 +12,19 @@ namespace ConsoleApp3_HW
         public string Number { get; set; }
         public int Speed { get; set; }
 
+
         public string StartRide()
         {
             return $"Starting ride...";
         }
 
-        public string SpeedUp()
+        public void SpeedUp(int addedSpeed)
         {
-            return $"Speeding up...";
+            Speed += addedSpeed;
         }
-        public string StopRide()
+        public void StopRide()
         {
-            return $"Stopping ride...";
+            Speed = 0;
         }
         public string Beep()
         {
